@@ -1,9 +1,7 @@
-# Serverless app architecture
-<p>This is a  design for a serverless application with CloudFront, S3, Amazon Cognito, Lambda, and DynamoDB</p>
-<p>The application uses Cognito user pool as the identity provider. The IAM role assigned for the authenticated user in the identity pool settings has finegrained rules that allow reading and writing to only those items in DynamoDB table that the user has access to.</p>
-<p>The architecture and the details of implementation can be read in the 3 part series of articles I have written in LinkedIn</p>
-<div><a target="_blank" href="https://www.linkedin.com/pulse/building-serverless-app-part-1-anwar-sadat/">Building a serverless app - part 1</a></div>
-<div><a target="_blank" href="https://www.linkedin.com/pulse/building-serverless-app-part-2-anwar-sadat/">Building a serverless app - part 2</a></div>
-<div><a target="_blank" href="https://www.linkedin.com/pulse/building-serverless-app-part-3-anwar-sadat/">Building a serverless app - part 3</a></div>
+# Webhook Handler
+<p>The Lambda and API Gareway based solution was designed and implemented to integrate a digital publication platform to a headless CMS platform.</p>
+<p>Before the implementation of this solution, the content authors had to login to the publishing platform to get details of the publications and then create a CMS entry manually using the details</p>
+<p>This solution automatically created a CMS entry whenever a new issue was created and published in the digital publication platform.</p> 
+<p>This automation helped improve the operational efficiency of the content authors and helped them publish digital issues directly to mobile apps</p>
 <br>
-<img src="serverless.png" alt="Serverless app architecture" title="Serverless app architecture">
+<img src="Webhook-Handler.png" alt="Webhook Handler" title="Webhook Handler">
