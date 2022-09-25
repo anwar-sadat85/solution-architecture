@@ -4,4 +4,4 @@
 <p>This solution automatically created a CMS entry whenever a new issue was created and published in the digital publication platform.</p> 
 <p>This automation helped improve the operational efficiency of the content authors and helped them publish digital issues directly to mobile apps</p>
 <br>
-<img src="Webhook-Handler.png" alt="Webhook Handler" title="Webhook Handler">
+<img src="Webhook-Handler.drawio.png" alt="Webhook Handler" title="Webhook Handler">
