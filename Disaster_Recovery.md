@@ -53,3 +53,9 @@ RDS backup - AWS Backup - RPO of less than 5 minutes
 - Services active (immutable)
 - Traffic active
 - Data replicated to another region anticipating a disaster
+
+## RTO & RPO
+Backup and restore (hours) > Pilot light (10s of minutes) > Warm standby (within a minute) > Multisite active / active (zero)
+
+## RPO RDS recovery
+AWS RDS Backup > Aurora Global Database
