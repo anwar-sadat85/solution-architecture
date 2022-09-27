@@ -14,4 +14,4 @@ Cognito user pool is used as IdP and identity pool is used to assign roles to th
 
 Out of the box search API of the headless CMS is used to fetch the search results which are then filtered using the items that are accessible to the user.
 
-<img src="Training_Website_solution.png" alt="Training Website solution" title="Training Website solution">
+<img src="Training_Website.drawio.png" alt="Training Website solution" title="Training Website solution">
