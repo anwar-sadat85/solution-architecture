@@ -1,4 +1,5 @@
-# Offline catalog download
+# Training website design
+
 The following is a high level architecture of an AWS based solution for a training website
 
 A headless CMS is used for creating content.
