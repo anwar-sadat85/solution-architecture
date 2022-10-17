@@ -25,6 +25,7 @@
  - Public subnet with VPC Endpoint for SQS and Gateway Endpoint for Dynamo DB to reduce latency
  - Secrets manager to store configuration parameters for Lambda functions (Eg., CMS API Key)
  - SQS to handle webhooks from Headless CMS - to create entries in DynamoDB for UGC
+    - Data encrypted at rest
  - API Gateway
     - Integrations with Lambda functions for the services
         - Cognito Authorizers
