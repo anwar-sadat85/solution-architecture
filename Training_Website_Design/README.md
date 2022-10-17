@@ -21,9 +21,17 @@
 # AWS Services
  - DynamoDB with Multi AZ support. Data encrypted at rest.
  - DAX Cluster for faster reads.
- - Lambda functions for each service inside a VPC in a public subnet
+ - Lambda functions for each service with Multi AZ support (choose same AZs as DynamoDB) inside a VPC in a public subnet 
  - Public subnet with VPC Endpoint for SQS and Gateway Endpoint for Dynamo DB to reduce latency
  - Secrets manager to store configuration parameters for Lambda functions (Eg., CMS API Key)
  - SQS to handle webhooks from Headless CMS - to create entries in DynamoDB for UGC
  - API Gateway
+    - Integrations with Lambda functions for the services
+        - Cognito Authorizers
+    - Integration with SQS for the Headless CMS webhook
+        - API Key based authentication
+ - Amplify to host the front end app
+ - Cognito for user authentication
+ - Cloudfront for caching and content distribution
+    - AWS Shield for DDoS protection 
  
